@@ -53,7 +53,7 @@ Phone Number
       </div>
        </div>
 
-<input  type="submit" className='bg-firstGreen w-56 font-[700] mt-10 uppercase cursor-pointer hover:bg-green-900 shadow-md  h-16 rounded-full text-white self-center '  value="Signup" />
+<input  type="submit" className='bg-green-700 w-56 font-[700] mt-10 uppercase cursor-pointer hover:bg-green-900 shadow-md  h-16 rounded-full text-white self-center '  value="Signup" />
 
   </form>
    

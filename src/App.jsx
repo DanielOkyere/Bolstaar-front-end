@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes ,Route } from 'react-router-dom'
 import './index.css'
+import { RecoilRoot } from 'recoil'
 // importation des screens
 import homeScreen from './Screens/HomeScreen'
 import AboutUsScreen from "./Screens/AboutUsScreen"
@@ -7,22 +8,26 @@ import MainSignup from './Screens/Auth/Signup/MainSignup'
 import FarmerSignup from './Screens/Auth/Signup/FarmerSignup'
 import ProviderSignup from './Screens/Auth/Signup/ProviderSignup'
 import LoginScreen from './Screens/Auth/LoginScreen'
+import Layout from './Layout/Layout'
 function App() {
   
 
   return (
-    <div>
+    <RecoilRoot>
     <Router>
       <Routes>
+        <Route  element={<Layout/>} >
         <Route path='/' element={  <homeScreen />   } />
         <Route path='/about' element={ <AboutUsScreen /> } />
+        </Route>
+      
         <Route path='/signup/main' element={<MainSignup /> } />
         <Route path='/signup/farmer' element={ <FarmerSignup/>} />
         <Route path='/signup/provider' element={<ProviderSignup/>} />
         <Route path='/login' element={<LoginScreen/>} />
       </Routes>
     </Router>
-    </div>
+    </RecoilRoot>
   )
 }
 

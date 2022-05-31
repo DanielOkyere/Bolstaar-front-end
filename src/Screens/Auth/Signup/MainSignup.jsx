@@ -9,7 +9,9 @@ function MainSignup() {
   const Navigate = useNavigate()
   const selectInput = useRef(null)
   const moveToSignupScreen = () =>{
-if(selectInput.current.value === 1){
+    console.log(selectInput.current.value)
+    const option = parseInt( selectInput.current.value)
+if(option === 1){
   Navigate('/signup/farmer')
 }else{
   Navigate('/signup/provider')
@@ -85,7 +87,7 @@ Password
        </div>
         </div>
 
-<div onClick={moveToSignupScreen} className="bg-firstGreen w-48 font-[700] gap-x-4 flex justify-center items-center mt-10 uppercase cursor-pointer hover:bg-green-900 shadow-md  h-16 rounded-full text-white self-end" >
+<div onClick={moveToSignupScreen} className="bg-green-700 w-48 font-[700] gap-x-4 flex justify-center items-center mt-10 uppercase cursor-pointer hover:bg-green-900 shadow-md  h-16 rounded-full text-white self-end" >
 <p> next</p>
 <MdArrowForward  size={35} className='fill-current text-white ' /> 
 </div>
