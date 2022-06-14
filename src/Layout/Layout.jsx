@@ -8,14 +8,14 @@ import {useRecoilValue,useSetRecoilState} from "recoil"
 function Layout() {
     const NavState = useRecoilValue(NavAtom)
   return (
-    <div className=''>
+    <div className='overflow-x-hidden'>
 {/* sideBar or or Navbar */}
 <NavBar />
     {NavState ?     <SideBar /> : '' }
 {/* body */}
 <Outlet/>
 {/* footer */}
-{/* <Footer/> */}
+<Footer/>
     </div>
   )
 }
