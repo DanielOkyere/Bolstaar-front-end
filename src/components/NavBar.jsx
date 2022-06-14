@@ -10,7 +10,7 @@ import BolstarLogo from '../Assets/Images/BolStar_Logo.png'
     setNavState(true)
   }
   return (
-   <section className="bg-white shadow-black border-2   ">
+   <section className="bg-white shadow-black border-2    ">
   <nav className="flex justify-between   md:p-6 px-4">
     <div className="flex justify-between items-center w-full">
       <div className="xl:w-1/3">
@@ -26,7 +26,7 @@ import BolstarLogo from '../Assets/Images/BolStar_Logo.png'
         <ul className="flex justify-center">
           <li className="mr-12">
             <Link to ='/'
-              className="text-gray-500 text-3xl hover:text-gray-900 font-[900]"
+              className="text-3xl text-black font-[500] underline decoration-green-500"
               
             >
              Home
@@ -34,7 +34,7 @@ import BolstarLogo from '../Assets/Images/BolStar_Logo.png'
           </li>
           <li className="mr-12">
             <Link to="/about"
-              className="text-gray-500 text-3xl hover:text-gray-900 font-[900]"
+              className="text-3xl text-black font-[500]"
               
             >
               AboutUs
@@ -42,7 +42,7 @@ import BolstarLogo from '../Assets/Images/BolStar_Logo.png'
           </li>
           <li className="mr-12">
             <Link to='products'
-              className="text-gray-500 text-3xl hover:text-gray-900 font-[900]"
+              className="text-3xl text-black font-[500]"
               
             >
               products
@@ -50,7 +50,7 @@ import BolstarLogo from '../Assets/Images/BolStar_Logo.png'
           </li>
           <li>
             <Link to='/cart'
-              className="text-gray-500 text-3xl hover:text-gray-900 font-[900]"
+              className="text-3xl text-black font-[500]"
              
             >
           cart
@@ -61,13 +61,13 @@ import BolstarLogo from '../Assets/Images/BolStar_Logo.png'
       <div className="hidden xl:block xl:w-1/3">
         <div className="flex items-center justify-end gap-x-5 ">
           <Link to='/login'
-            className="px-16 py-4 rounded-full inline-block  text-lg  leading-5 text-blue-50 bg-green-700 hover:bg-green-600 font-semibold focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-full"
+            className="px-16 py-4 rounded-full inline-block  text-lg  leading-5 text-blue-50 bg-white border-2 border-green-600 text-green-600 hover:text-white hover:bg-green-600 font-semibold focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-full"
            
           >
       Login
           </Link>
           <Link to='/signup/main'
-            className=" px-16 py-4 rounded-full inline-block  text-lg  leading-5 text-blue-50 bg-green-500 hover:bg-green-600 font-semibold focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-full"
+            className=" px-16 py-4 rounded-full inline-block  text-lg  leading-5 text-white  hover:border-2 hover:  border-green-600 hover:text-green-600  bg-green-500 hover:bg-white font-semibold focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-full"
            
           >
             signup
