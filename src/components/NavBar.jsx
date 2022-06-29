@@ -13,6 +13,7 @@ function Menu() {
     return (
         <section className="bg-white shadow-black border-2">
             <nav className="flex justify-between md:p-6 px-4">
+              <Container>
                 <div className="flex justify-between items-center w-full">
                     <div className="xl:w-1/12">
                         <Link to="/" className="block max-w-max">
@@ -35,22 +36,6 @@ function Menu() {
                                     className="text-gray-500 text-2xl hover:text-gray-600 font-[600]"
                                 >
                                     About Us
-                                </Link>
-                            </li>
-                            <li className="mr-12">
-                                <Link
-                                    to="products"
-                                    className="text-gray-500 text-2xl hover:text-gray-600 font-[600]"
-                                >
-                                    Products
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    to="/cart"
-                                    className="text-gray-500 text-2xl hover:text-gray-600 font-[600]"
-                                >
-                                    Cart
                                 </Link>
                             </li>
                         </ul>
@@ -78,6 +63,7 @@ function Menu() {
                 >
                     <IoIosMenu size={45} color="text-white" />
                 </button>
+               </Container>
             </nav>
             {/* deuxieme bar navigator */}
         </section>

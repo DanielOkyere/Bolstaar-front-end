@@ -5,6 +5,7 @@ import {Outlet} from 'react-router-dom'
 import NavAtom from '../recoil/Atoms/NavAtom'
 import Footer from '../components/Footer'
 import {useRecoilValue,useSetRecoilState} from "recoil"
+import Container from 'react-bootstrap/Container'
 function Layout() {
     const NavState = useRecoilValue(NavAtom)
   return (
@@ -13,7 +14,9 @@ function Layout() {
 <NavBar />
     {NavState ?     <SideBar /> : '' }
 {/* body */}
+<Container>
 <Outlet/>
+</Container>
 {/* footer */}
 <Footer/>
     </div>
