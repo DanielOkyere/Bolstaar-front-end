@@ -11,7 +11,6 @@ function Menu() {
         setNavState(true);
     };
     return (
-
             <section className="bg-white shadow-black border-2">
 		    <Container>
                 <nav className="flex justify-between md:p-6 px-4">
@@ -49,14 +48,6 @@ function Menu() {
                                         className="text-gray-500 text-2xl hover:text-gray-600 font-[600]"
                                     >
                                         Products
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        to="/cart"
-                                        className="text-gray-500 text-2xl hover:text-gray-600 font-[600]"
-                                    >
-                                        Cart
                                     </Link>
                                 </li>
                             </ul>
