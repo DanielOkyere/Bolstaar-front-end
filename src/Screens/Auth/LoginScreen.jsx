@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 function LoginScreen() {
   return (
     <div style={{ backgroundImage :  ` url(${LoginBackground})` }}
-     className='w-screen h-screen  flex flex flex-col gap-y-7 justify-center items-center'
+     className='w-screen h-screen   flex flex-col gap-y-7 justify-center items-center'
     >
       <img src={BolstarLogo}  className='h-24 w-38' />
    <form className='   w-[29rem] md:w-[38rem] h-[32rem] shadow-xl  border-2  px-14  gap-y-6 rounded-2xl justify-center  bg-white flex flex-col p-2  '>
@@ -20,7 +20,7 @@ Phone Number or Email
        {/* logo et input */}
        <div className='flex border-2   border-gray-200 gap-x-2  items-center w-full   h-[4rem]  '>
             <MdEmail  size={35} className='fill-current text-gray-200 w-1/4   ' /> 
-            <input type='text' className='w-3/4 text-xs md:text-lg  outline-none h-full text-xl text-gray-500 appearence-none' placeholder='enter your Mail or phoneNumber'   />
+            <input type='text' className='w-3/4 md:text-lg  outline-none h-full text-xl text-gray-500 appearence-none' placeholder='enter your Mail or phoneNumber'   />
        </div>
         </div>
      <div>
@@ -33,7 +33,7 @@ Phone Number or Email
        {/* logo et input */}
        <div className='flex border-2 border-gray-200 gap-x-2  items-center w-full  h-[4rem] '>
             <MdLock  size={35} className='fill-current text-gray-200 w-1/4   ' /> 
-            <input type='password' className='w-3/4 text-xs  md:text-lg outline-none h-full text-xl text-gray-500'  placeholder='enter your password'/>
+            <input type='password' className='w-3/4  md:text-lg outline-none h-full text-xl text-gray-500'  placeholder='enter your password'/>
        </div>
         </div>
 
