@@ -2,7 +2,7 @@ import React from "react";
 import LogoBolstaar from "../Assets/Images/LogoBolstaar.jpg";
 import farmerImg from "../Assets/Images/farmer2.jpg";
 import { Container } from "react-bootstrap";
-import {TiGroup} from "react-icons/ti"
+import { TiGroup } from "react-icons/ti";
 
 function AboutUsScreen() {
     return (
@@ -40,22 +40,17 @@ function AboutUsScreen() {
             <div className="content-box-lg">
                 <Container>
                     <div className="row">
-                        <div className="col-md-4">
+                        <div className="col-md-6">
                             <i className="fa fa-book"></i>
                             <h3>Mission</h3>
                             <hr></hr>
                             <p className="text-justify">
-                                Bolstaar’s main objective is to supply farmers
-                                with farm resources within 48hrs of application
-                                to help them increase yield by 100%, cut cost of
-                                farming by 50% and increase profit by 50%. We
-                                also accelerate the time of products to market
-                                and provide easy access to market for both
-                                farmers and buyers, thereby ensuring more
-                                profitability and productivity.
+                                To provide a dependable and life time value for
+                                smallholder farmers who are looking forward to
+                                using technologies to achieve efficiency.
                             </p>
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-6">
                             <i className="fa fa-book"></i>
                             <h3>Vision</h3>
                             <hr></hr>
@@ -63,21 +58,6 @@ function AboutUsScreen() {
                                 To create Africa’s largest farm logistics
                                 community and expand rural farm technology
                                 adoption
-                            </p>
-                        </div>
-                        <div className="col-md-4">
-                            <i className="fa fa-book"></i>
-                            <h3>Mission</h3>
-                            <hr></hr>
-                            <p className="text-justify">
-                                Bolstaar’s main objective is to supply farmers
-                                with farm resources within 48hrs of application
-                                to help them increase yield by 100%, cut cost of
-                                farming by 50% and increase profit by 50%. We
-                                also accelerate the time of products to market
-                                and provide easy access to market for both
-                                farmers and buyers, thereby ensuring more
-                                profitability and productivity.
                             </p>
                         </div>
                     </div>
@@ -103,13 +83,9 @@ function AboutUsScreen() {
                                 className="text-black fill-current"
                             />
                         </div>
-                        <h1 className="text-2xl font-[800]  tracking-wide leading-14 mt-[3rem] text-center z-20 ">
-                            Team leader
+                        <h1 className="tracking-wide leading-14 mt-[3rem] text-center z-20">
+                            Daniel Okyere (Tech lead)
                         </h1>
-                        <p className="text-center text-gray-400 font-[700] ">
-                            To create Africa’s largest farm logistics community
-                            and expand rural farm technology adoption.
-                        </p>
                     </div>
                     <div className="flex flex-col w-[22rem] h-[26rem] bg-white relative border-2 shadow-lg ">
                         <img
@@ -123,13 +99,9 @@ function AboutUsScreen() {
                                 className="text-black fill-current"
                             />
                         </div>
-                        <h1 className="text-2xl font-[800]  tracking-wide leading-14 mt-[3rem] text-center z-20 ">
-                            Team leader
+                        <h1 className="tracking-wide leading-14 mt-[3rem] text-center z-20">
+                            Yaa Amoakoa (Team leader)
                         </h1>
-                        <p className="text-center text-gray-400 font-[700] ">
-                            To create Africa’s largest farm logistics community
-                            and expand rural farm technology adoption.
-                        </p>
                     </div>
                     <div className="flex flex-col w-[22rem] h-[26rem] bg-white relative border-2 shadow-lg ">
                         <img
@@ -143,13 +115,9 @@ function AboutUsScreen() {
                                 className="text-black fill-current"
                             />
                         </div>
-                        <h1 className="text-2xl font-[800]  tracking-wide leading-14 mt-[3rem] text-center z-20 ">
-                            Team leader
+                        <h1 className="tracking-wide leading-14 mt-[3rem] text-center z-20">
+                            Theophilus Gyamo (Business lead)
                         </h1>
-                        <p className="text-center text-gray-400 font-[700] ">
-                            To create Africa’s largest farm logistics community
-                            and expand rural farm technology adoption.
-                        </p>
                     </div>
                 </div>
             </div>
