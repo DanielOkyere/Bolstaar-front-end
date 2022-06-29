@@ -2,14 +2,25 @@ import React from 'react'
 import LoginBackground from "../../Assets/Images/BackgroundLogin.png"
 import BolstarLogo from '../../Assets/Images/BolStar_Logo.png'
 import {MdEmail,MdLock } from 'react-icons/md'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import { IoIosArrowBack } from 'react-icons/io'
+import { BiLeftArrowAlt } from 'react-icons/bi'
+
 function LoginScreen() {
+  const navigator = useNavigate()
+  const previous = () => { 
+    navigator(-1)
+   }
   return (
     <div style={{ backgroundImage :  ` url(${LoginBackground})` }}
-     className='w-screen h-screen   flex flex-col gap-y-7 justify-center items-center'
+     className='w-screen h-screen relative  flex flex-col gap-y-7 justify-center items-center'
     >
+        <div  onClick={previous}
+       className='bg-white shadow-md absolute top-6 left-3  md:left-6 cursor-pointer  hover:bg-gray-100 ml-8 w-16 h-16 rounded-lg flex items-center justify-center '>
+<BiLeftArrowAlt  size={58} color='green'  className='text-white fill-current font-bold'/>
+    </div>
       <img src={BolstarLogo}  className='h-24 w-38' />
-   <form className='   w-[29rem] md:w-[38rem] h-[32rem] shadow-xl  border-2  px-14  gap-y-6 rounded-2xl justify-center  bg-white flex flex-col p-2  '>
+   <form className='   w-[28rem] md:w-[38rem] h-[32rem] shadow-xl  border-2  px-14  gap-y-6 rounded-2xl justify-center  bg-white flex flex-col p-2  '>
      <div  >
    <label
             className="block mb-2 text-gray-800 font-medium leading-6 text-xl font-900"

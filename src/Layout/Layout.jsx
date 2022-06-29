@@ -4,7 +4,7 @@ import NavBar from '../components/NavBar'
 import {Outlet} from 'react-router-dom'
 import NavAtom from '../recoil/Atoms/NavAtom'
 import Footer from '../components/Footer'
-import {useRecoilValue,useSetRecoilState} from "recoil"
+import {useRecoilValue} from "recoil"
 function Layout() {
     const NavState = useRecoilValue(NavAtom)
   return (

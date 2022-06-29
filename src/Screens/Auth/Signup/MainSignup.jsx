@@ -5,8 +5,12 @@ import {MdEmail,MdLock,MdArrowForward,MdSupervisedUserCircle } from 'react-icons
 import {HiUserCircle } from 'react-icons/hi'
 import {FaUserCog} from "react-icons/fa"
 import { Link, useNavigate } from 'react-router-dom'
+import { BiLeftArrowAlt } from 'react-icons/bi'
 function MainSignup() {
   const Navigate = useNavigate()
+  const previous = () => { 
+    Navigate(-1)
+   }
   const selectInput = useRef(null)
   const moveToSignupScreen = () =>{
     console.log(selectInput.current.value)
@@ -22,6 +26,10 @@ if(option === 1){
 
   return (
     <div className='w-auto h-auto  flex  md:grid md:grid-cols-2'>
+         <div  onClick={previous}
+       className='bg-white shadow-md absolute top-6 left-3  md:left-6 cursor-pointer  hover:bg-gray-100 ml-8 w-16 h-16 rounded-lg flex items-center justify-center '>
+<BiLeftArrowAlt  size={58} color='green'  className='text-white fill-current font-bold'/>
+    </div>
 <div className=' hidden  md:flex justify-center items-center  h-9/12 w-full '>
   <img src={ImageMainSignup} className='   h-[56rem] w-full  ' />
   

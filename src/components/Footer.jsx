@@ -14,22 +14,22 @@ function Footer() {
          </div>
          {/* 2nd column */}
          <div className='bg-gray-200 h-[45rem] md:h-[33rem]  flex flex-col  md:grid md:grid-cols-4 px-6 text-4xl '>
-           <div className=' flex justify-center items-center flex-col gap-y-8 mt-24 '>
-           <div className='flex gap-x-3 items-center '> 
+           <div className=' flex justify-center items-center flex-col gap-y-8  '>
+           <div className='flex md:mt-0 mt-24 items-center '> 
 <img src={LOGO} />
-               <p>olstaar</p>
+               <p className='mt-4'>olstaar</p>
              </div>
              <div className='flex gap-x-3  text-lg  '> 
-               <RiMapPin2Fill  size={38} color="black" />
-               <p>123 Street, accra</p>
+               <RiMapPin2Fill   color="black" className='md:w-[4em] md:h-[2em]' />
+               <p className='text-sm md:text-2xl'>123 Street, accra</p>
              </div>
              <div className='flex gap-x-3 text-lg '> 
-               <IoCall  size={38} color="black" />
-               <p>+233123456789</p>
+               <IoCall   color="black " className='md:w-[4em] md:h-[2em] ' />
+               <p className='text-sm md:text-2xl'>+233123456789</p>
              </div>
              
            </div>
-           <div className='  flex justify-center items-center flex-col gap-y-8'>
+           <div className=' flex justify-center items-center flex-col gap-y-8'>
              <p className='md:text-3xl text-lg  font-bold'>About Us</p>
              <p className='md:text-2xl text-sm '>About   </p>
              <p className='md:text-2xl text-sm '>How we work</p>

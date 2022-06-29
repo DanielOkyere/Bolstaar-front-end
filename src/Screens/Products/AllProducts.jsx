@@ -8,7 +8,7 @@ function AllProducts() {
      className="py-20 bg-gray-100">
     <div className=" mx-auto px-4">
       <div className="flex flex-wrap -mx-4 mb-20 items-center justify-between md:grid md:grid-cols-2 ">
-        <div className="w-full lg:w-auto px-4 mb-12 xl:mb-0 flex gap-x-4">
+        <div className="w-full ml-8 lg:w-auto px-4 mb-12 xl:mb-0 flex gap-x-4">
           <input  placeholder='enter something'  className='appearence-none w-3/4 shadow-lg p-2 border-2 rounded-lg' />
           <div className='h-12 w-12 rounded-lg bg-green-700 flex justify-center items-center cursor-pointer '>
             <FaSearch size={24} className='text-white' />
@@ -21,7 +21,7 @@ function AllProducts() {
               name=""
               id=""
             >
-              <option value={1}>Sort by category</option>
+              <option value={1}> category</option>
               <option value={2}>drones</option>
               <option value={3}>soil test</option>
             </select>
@@ -32,7 +32,7 @@ function AllProducts() {
               name=""
               id=""
             >
-              <option value={1}>Sort by rate</option>
+              <option value={1}> rate</option>
               <option value={2}>1-2</option>
               <option value={3}>2-3</option>
             </select>
@@ -43,7 +43,7 @@ function AllProducts() {
               name=""
               id=""
             >
-              <option value={1}>Sort by price</option>
+              <option value={1}>price</option>
               <option value={2}>1-45</option>
               <option value={3}>46-200</option>
             </select>

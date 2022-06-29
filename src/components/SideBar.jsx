@@ -10,77 +10,63 @@ function SideBar() {
     setNavState(false)
   }
   return (
-    <div className=" transition-all ease-in-out delay-150 duration-[3000] fixed top-0 left-0 z-[100] w-full h-full bg-coolGray-900 bg-opacity-50  ">
-    <div className="fixed top-0 left-0 bottom-0 w-full  max-w-xs bg-white">
-      <nav className="relative p-6 h-full overflow-y-auto">
-        <div className="flex flex-col justify-between h-full">
-          <Link to='/'
-           className="inline-block" >
-            <img
-              className="h-16"
-              src={BolstarLogo}
-              alt=""
-            />
-          </Link>
-          <ul className="py-6 gap-y-">
-          <li className="mr-12">
-            <Link to='/'
-              className="text-gray-500 text-3xl hover:text-gray-900 font-[900]"
+    <div>
+    <nav className="flex flex-col  flex-wrap items-center justify-between p-4 bg-white  "> 
+<div className="navbar-menu flex-col  lg:flex lg:flex-grow lg:items-center w-full lg:w-auto">
+<ul className="flex justify-center">
+          <li className=" ml-8 mr-12">
+            <Link to ='/'
+              className="md:text-3xl text-lg text-black font-[500] underline decoration-green-500"
               
             >
              Home
             </Link>
           </li>
           <li className="mr-12">
-            <Link to='/about'
-              className="text-gray-500 text-3xl hover:text-gray-900 font-[900]"
+            <Link to="/about"
+              className="md:text-3xl text-lg text-black font-[500]"
               
             >
               AboutUs
             </Link>
           </li>
           <li className="mr-12">
-            <Link to='/products'
-              className="text-gray-500 text-3xl hover:text-gray-900 font-[900]"
+            <Link to='products'
+              className="md:text-3xl text-lg text-black font-[500]"
               
             >
               products
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link to='/cart'
-              className="text-gray-500 text-3xl hover:text-gray-900 font-[900]"
+              className="text-3xl text-black font-[500]"
              
             >
           cart
             </Link>
-          </li>
+          </li> */}
         </ul>
-          <div className="flex flex-col flex-wrap">
-            <div className="flex-col flex gap-y-5 w-full items-center ">
-            <Link to='/login'
-            className="w-full  text-center py-4  inline-block  text-lg  leading-5 text-blue-50 bg-green-700 hover:bg-green-600 font-semibold focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-full"
+
+<div className="flex flex-col gap-y-4 mt-8 items-center justify-end gap-x-5 ">
+          <Link to='/login'
+            className="px-8 md:px-16 py-4   inline-block  text-lg  leading-5   bg-white border-2 border-green-600 text-green-600 hover:text-white hover:bg-green-600 font-semibold focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-full"
            
           >
       Login
           </Link>
           <Link to='/signup/main'
-            className=" w-full text-center  py-4  inline-block  text-lg  leading-5 text-blue-50 bg-green-500 hover:bg-green-600 font-semibold focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-full"
+            className=" px-8 md:px-16 py-4    inline-block  text-lg  leading-5 text-white  hover:border-2 hover:  border-green-600 hover:text-green-600  bg-green-500 hover:bg-white font-semibold focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-full"
            
           >
             signup
           </Link>
-            </div>
-          </div>
         </div>
-      </nav>
-      <div  onClick={CloseNav} className="navbar-close absolute top-5 p-4 right-3" >
+</div>
 
-      <ImCross size={16}  className='hover:text-blue-400 text-current '  color='text-white'  />
-      </div>
-   
-    </div>
-  </div>
+</nav>
+</div>
+
   )
 }
 

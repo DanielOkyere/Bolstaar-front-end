@@ -1,16 +1,21 @@
 import React, { useRef, useState } from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
-import slide3 from '../Assets/Images/slide1.png'
-import slide2 from '../Assets/Images/slide2.png'
-import slide1 from '../Assets/Images/slide3.png'
+// import Slider from "react-slick";
+// import slide3 from '../Assets/Images/slide1.png'
+// import slide2 from '../Assets/Images/slide2.png'
+// import slide1 from '../Assets/Images/slide3.png'
 import {IoMdArrowDropleft,IoMdArrowDropright} from 'react-icons/io'
-import {BiLeftArrow,BiRightArrow} from "react-icons/bi"
+// import {BiLeftArrow,BiRightArrow} from "react-icons/bi"
 import BolstarInfo from '../Assets/Images/BolstaarAboutPellets.png'
 import BolstarAdd from '../Assets/Images/Rectangle10.png'
 import { Link } from 'react-router-dom';
 import TesstimialsCard from '../components/TestimonialsCard';
+import ControlledCarousel from "../components/CarouselCompenent";
+import Certficate from '../components/Svgs/Certificate.jsx'
+import Certficate2 from '../components/Svgs/Certificate2.jsx'
+import Flower from '../components/Svgs/Flower.jsx'
+import Flower2 from '../components/Svgs/Flower2.jsx'
 function HomeScreen() {
   //settings pour le carousel
   const [imageIndex, setImageIndex] = useState(0);
@@ -35,11 +40,11 @@ function HomeScreen() {
   
   };
   // image for carousel
-  const imageUrls =[
-    slide1,
-    slide2,
-    slide3
-  ]
+  // const imageUrls =[
+  //   slide1,
+  //   slide2,
+  //   slide3
+  // ]
   // reference to the slider
   const slider = useRef()
   // navigation methods
@@ -55,53 +60,58 @@ function HomeScreen() {
     <div className='h-auto'>
       {/* div for carousel */}
       <div className='flex flex-col relative'>
-      <div style={{ backgroundColor :  "#C6E1C5"}} 
+      {/* <div style={{ backgroundColor :  "#C6E1C5"}} 
        onClick={previous} className=' h-8 w-8 md:h-12 md:w-12 z-50 absolute  ring-4 ring-white shadow-2xl cursor-pointer flex justify-center items-center left-4 top-1/2 rounded-full  ' >
           <IoMdArrowDropleft size={40} color='white'  className=''/>
-        </div>
-        <div 
+        </div> */}
+        {/* <div 
         style={{ backgroundColor :  "#C6E1C5"}} 
         onClick={next} className=' h-8 w-8 md:h-12 md:w-12 flex  z-50 absolute  ring-4 ring-white shadow-2xl cursor-pointer justify-center items-center right-4 top-1/2 rounded-full  ' >
         <IoMdArrowDropright size={40} color='white'  className=''/>
-        </div>
-       <Slider  ref={slider}  {...settings1} 
-       className=' flex  justify-center items-center  rounded-lg   h-auto  z-10 w-auto pt-3  overflow-x-hidden ' >
-    {imageUrls.map( img =>(
-
-    
-                <img
-                key={ Math.random()}
-                className='w-[80vw] h-[80vh] md:object-contain object-fill '
-            
-                  src={img }
-                
-                />
-       
-          
-         )
-
-         )}
-       </Slider>
+        </div> */}
+      <ControlledCarousel />
        {/* current carousel dots  */}
-       <div className='justify-center flex z-[60] items-center gap-x-3 mb-4'>
+       {/* <div className='justify-center flex z-[60] items-center gap-x-3 mb-4'>
 <div className={'h-6 w-6 rounded-full shadow-sm shadow-black ' + (imageIndex ===0 ? " bg-green-500" : "bg-white ") }></div>
 <div className={'h-6 w-6 rounded-full shadow-sm shadow-black '  + (imageIndex ===1 ? " bg-green-500" : "bg-white ") }></div>
 <div className={'h-6 w-6 rounded-full shadow-sm shadow-black ' + (imageIndex ===2 ? " bg-green-500" : "bg-white ") }></div>
-       </div>
+       </div> */}
        </div>
        {/* about part */}
-       <div className='h-[70vh] bg-green-600 p-5 flex flex-col  md:grid md:grid-cols-2 '>
+       <div className=' h-screen md:h-[70vh] bg-green-600 p-5 flex flex-col  md:grid md:grid-cols-2 '>
 <div className='flex justify-center  font-bold items-center text-white  flex-col tracking-widest leading-8 gap-y-4'>
   <div className='md:w-[34rem] w-auto  '>
-  <p className='text-left capitalize md:text-3xl mb-8'>About bolstaar</p>
+  <p className='text-left capitalize text-sm md:text-3xl mb-8'>About bolstaar</p>
   <p className='text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
 </div>
-<div   style={{ backgroundImage :  ` url(${BolstarInfo})` , backgroundRepeat : 'no-repeat',backgroundPosition : "center"}}
-></div>
+<div   className=' h-full  pl-4 '
+>
+  <img src={BolstarInfo} className='object-cover' />
+{/* <div className='bg-white h-[12rem] w-[12rem] rounded-lg absolute flex flex-col justify-center items-center shadow-xl  top-3 ' >
+<Certficate />
+  <h1 className='text-green-600 font-semibold '  > Certified professisonals </h1>
+  
+</div>
+<div className='bg-white h-[12rem] w-[12rem] rounded-lg absolute flex flex-col justify-center items-center shadow-xl  right-[17rem]  ' >
+<Flower2 />
+  <h1 className='text-green-600 font-semibold '  > Growth & Developement  </h1>
+
+</div>
+<div className='bg-white h-[12rem] w-[12rem] rounded-lg absolute flex flex-col justify-center items-center shadow-xl  bottom-12 ' >
+<Flower />
+<h1 className='text-green-600 font-semibold '  > honest  &  reliable </h1>
+
+</div>
+<div className='bg-white h-[12rem] w-[12rem] rounded-lg absolute flex flex-col justify-center items-center shadow-xl  bottom-12 right-7 ' >
+<Certficate />
+  <h1 className='text-green-600 font-semibold '  > Certified professisonals </h1>
+
+</div> */}
+</div>
        </div>
         {/* about part */}
         <div style={{ backgroundImage :  ` url(${BolstarAdd})`   ,backgroundRepeat : 'no-repeat',backgroundSize: "cover"}} 
