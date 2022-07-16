@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap');
+
 /* :root {
 
 
@@ -6,12 +8,56 @@
     --SecondGreen: #4BD946;
     --TernaryGreen: #F9F8F3;
   } */
-* body{
-	font-family: Poppins, sans-serif;
+* body {
+  font-family: Poppins, sans-serif;
 }
 
-.about-section{
-	background-color: #409C3E;
+.container {
+  width: calc(100% - 48px) !important;
+  max-width: 1200px !important;
+}
+
+.about-section {
+  background-color: #409C3E;
+  margin-top: 104px;
+}
+
+.hero-h1 {
+  max-width: 490px;
+  margin-top: 24px;
+
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 44px;
+  /* or 112% */
+
+  letter-spacing: -0.01em;
+}
+
+.hero-img {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 992px) {
+  .hero-h1 {
+    margin-top: 72px;
+    font-size: 50px;
+    line-height: 56px;
+  }
+}
+
+.hero-p {
+  max-width: 440px;
+  margin-block: 30px 40px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
 }
 
 @tailwind base;
