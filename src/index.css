@@ -20,9 +20,32 @@
 .about-section {
   background-color: #409C3E;
   margin-top: 104px;
+  padding-block: 96px;
 }
 
-.hero-h1 {
+.about_highlights {
+  display: grid;
+  gap: 24px;
+  max-width: 480px;
+  margin-inline: auto;
+}
+
+@media screen and (min-width: 576px) {
+  .about_highlights {
+    grid: repeat(2, 1fr) / repeat(2, 1fr);
+    max-width: 560px;
+    max-height: 520px;
+    margin-inline: auto;
+  }
+
+  .highlight-card:nth-of-type(3) {
+    grid-area: 1/2/3/3;
+    align-self: center;
+  }
+}
+
+.hero-h1,
+.about-h1 {
   max-width: 490px;
   margin-top: 24px;
 
@@ -58,6 +81,50 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 150%;
+}
+
+.about-h1 {
+  margin-block: 20px 40px;
+}
+
+.about-p {
+  line-height: 1.6;
+  letter-spacing: 0;
+  text-align: justify;
+}
+
+.about-section .btn {
+  box-sizing: border-box;
+  height: 50px;
+  padding: 16px 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50px;
+}
+
+.about-section .btn-white {
+  border: 1px solid white;
+  background: white;
+  color: #409C3E;
+}
+
+.about-content {
+  align-items: center;
+}
+
+.about-btn {
+  margin-top: 40px;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-btn {
+    width: max-content;
+  }
 }
 
 @tailwind base;

@@ -36,6 +36,12 @@ const NavBarRoot = styled.nav`
     letter-spacing: -0.5px;
   }
 
+  .buttons {
+    display: grid;
+    grid: 1fr / auto-flow max-content;
+    gap: 16px;
+  }
+
   .btn {
     box-sizing: border-box;
     height: 50px;
@@ -46,12 +52,6 @@ const NavBarRoot = styled.nav`
     justify-content: center;
 
     border-radius: 50px;
-  }
-
-  .buttons {
-    display: grid;
-    grid: 1fr / auto-flow max-content;
-    gap: 16px;
   }
 
   .btn-empty {
