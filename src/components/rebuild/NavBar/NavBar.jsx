@@ -81,8 +81,12 @@ function NavList(props) {
 function Buttons() {
   return (
     <div className="buttons">
-      <button className="btn btn-empty">Login</button>
-      <button className="btn btn-primary">Sign up</button>
+      <Link className="btn btn-empty" to="/login">
+        Login
+      </Link>
+      <Link className="btn btn-primary" to="/signup/main">
+        Sign up
+      </Link>
     </div>
   );
 }
