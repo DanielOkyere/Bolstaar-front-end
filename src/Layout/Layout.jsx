@@ -9,17 +9,17 @@ import Container from "react-bootstrap/Container";
 function Layout() {
   const NavState = useRecoilValue(NavAtom);
   return (
-    <div className="overflow-x-hidden">
-      {/* sideBar or or Navbar */}
-      <NavBar />
-      {/* {NavState ? <SideBar /> : ""} */}
-      {/* body */}
-      {/* <Container> */}
-      <Outlet />
-      {/* </Container> */}
-      {/* footer */}
-      <Footer />
-    </div>
+      <>
+          {/* sideBar or or Navbar */}
+          <NavBar />
+          {/* {NavState ? <SideBar /> : ""} */}
+          {/* body */}
+          {/* <Container> */}
+          <Outlet />
+          {/* </Container> */}
+          {/* footer */}
+          <Footer />
+      </>
   );
 }
 
