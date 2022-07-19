@@ -1,6 +1,7 @@
 import React from "react";
-import LogoBolstaar from "../Assets/Images/LogoBolstaar.jpg";
-import farmerImg from "../Assets/Images/farmer2.jpg";
+import YaaImg from "../Assets/Images/Yaa.jpeg"
+import TimothyImg from "../Assets/Images/Theophilus.jpeg"
+import Daniel from "../Assets/Images/Daniel.jpeg"
 import { Container } from "react-bootstrap";
 import { TiGroup } from "react-icons/ti";
 
@@ -73,7 +74,7 @@ function AboutUsScreen() {
                 >
                     <div className="flex flex-col w-[22rem] h-[26rem] bg-white relative border-2 shadow-lg ">
                         <img
-                            src={farmerImg}
+                            src={YaaImg}
                             className="h-1/2 object-cover "
                             alt=""
                         />
@@ -84,12 +85,12 @@ function AboutUsScreen() {
                             />
                         </div>
                         <h1 className="tracking-wide leading-14 mt-[3rem] text-center z-20">
-                            Daniel Okyere (Tech lead)
+                           Yaa Amoakoah Frimpong  <br/> (Team Lead)
                         </h1>
                     </div>
                     <div className="flex flex-col w-[22rem] h-[26rem] bg-white relative border-2 shadow-lg ">
                         <img
-                            src={farmerImg}
+                            src={TimothyImg}
                             className="h-1/2 object-cover "
                             alt=""
                         />
@@ -100,12 +101,12 @@ function AboutUsScreen() {
                             />
                         </div>
                         <h1 className="tracking-wide leading-14 mt-[3rem] text-center z-20">
-                            Yaa Amoakoa (Team leader)
+                        Theophilus Gyamo  <br/> (Business lead)
                         </h1>
                     </div>
                     <div className="flex flex-col w-[22rem] h-[26rem] bg-white relative border-2 shadow-lg ">
                         <img
-                            src={farmerImg}
+                            src={Daniel}
                             className="h-1/2 object-cover "
                             alt=""
                         />
@@ -116,7 +117,9 @@ function AboutUsScreen() {
                             />
                         </div>
                         <h1 className="tracking-wide leading-14 mt-[3rem] text-center z-20">
-                            Theophilus Gyamo (Business lead)
+                            Daniel Okyere 
+                                <br/>
+                            (Technical Lead)
                         </h1>
                     </div>
                 </div>
