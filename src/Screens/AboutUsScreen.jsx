@@ -1,7 +1,7 @@
 import React from "react";
-import YaaImg from "../Assets/Images/Yaa.jpeg"
-import TimothyImg from "../Assets/Images/Theophilus.jpeg"
-import Daniel from "../Assets/Images/Daniel.jpeg"
+import YaaImg from "../Assets/Images/Yaa.jpeg";
+import TimothyImg from "../Assets/Images/Theophilus.jpeg";
+import Daniel from "../Assets/Images/Daniel.jpeg";
 import { Container } from "react-bootstrap";
 import { TiGroup } from "react-icons/ti";
 
@@ -11,29 +11,17 @@ function AboutUsScreen() {
             <div className="about-section bg-white p-3">
                 <h1 className="display-1 text-center">About Us</h1>
                 <p className="text-justify">
-                    Bolstaar is an agricultural technology integration platform
-                    that enables smallholder farmers to access workable
-                    technologies and techniques to scale-up and make substantial
-                    profit. The platform also provides supply chain information
-                    and links farmers to superior markets. Our platform is
-                    created with the desire to solve smallholder farmers’ three
-                    biggest problems: Lack of access to quality farm resources,
-                    goods low in quality and quantity, and market access. We
-                    make high quality agricultural technologies and innovative
-                    agritech solutions a click or call away from the farmer.
+                    Bolstaar is Africa’s first easy-to-use farm technologies
+                    aggregation platform. The platform allows smallholder
+                    farmers to conveniently book, rent or buy farm technologies,
+                    machineries and implements on demand
                     <br /> <br />
-                    Our model is designed to partner and collaborate with time
-                    tested Agtech Businesses, Agricultural technology providers
-                    and Research Institutes with many years of experience to
-                    support farmers in achieving efficiency on the field. Our
-                    constant engagements with the farmers enable us to
-                    understand the demands coming from the field and, thus,
-                    bring concrete solutions. On the other hand, we use data to
-                    forecast the demands in superior markets and provide supply
-                    chain information to help the farmer plan to meet the
-                    demand. The farmer is then given access to all the inputs,
-                    farm technologies and techniques they need to achieve the
-                    requirements of the market.
+                    Our unique business model uses log-in, call-in and walk-in
+                    options to manage interactions between farmers and
+                    technology providers, and allows farmers to access
+                    technologies using Bolstaar’s infrastructure. We support
+                    sub-urban and rural agricultural infrastructure expansion,
+                    and enhance technology adoption and farm mechanization
                 </p>
             </div>
             <br></br>
@@ -56,9 +44,9 @@ function AboutUsScreen() {
                             <h3>Vision</h3>
                             <hr></hr>
                             <p className="text-justify">
-                                To create Africa’s largest farm logistics
+                                To create Africa’s largest farm technologies
                                 community and expand rural farm technology
-                                adoption
+                                adoption.
                             </p>
                         </div>
                     </div>
@@ -85,7 +73,7 @@ function AboutUsScreen() {
                             />
                         </div>
                         <h1 className="tracking-wide leading-14 mt-[3rem] text-center z-20">
-                           Yaa Amoakoah Frimpong  <br/> (Team Lead)
+                            Yaa Amoakoah Frimpong <br /> (Team Lead)
                         </h1>
                     </div>
                     <div className="flex flex-col w-[22rem] h-[26rem] bg-white relative border-2 shadow-lg ">
@@ -101,7 +89,7 @@ function AboutUsScreen() {
                             />
                         </div>
                         <h1 className="tracking-wide leading-14 mt-[3rem] text-center z-20">
-                        Theophilus Gyamo  <br/> (Business lead)
+                            Theophilus Gyamo <br /> (Business lead)
                         </h1>
                     </div>
                     <div className="flex flex-col w-[22rem] h-[26rem] bg-white relative border-2 shadow-lg ">
@@ -117,8 +105,8 @@ function AboutUsScreen() {
                             />
                         </div>
                         <h1 className="tracking-wide leading-14 mt-[3rem] text-center z-20">
-                            Daniel Okyere 
-                                <br/>
+                            Daniel Okyere
+                            <br />
                             (Technical Lead)
                         </h1>
                     </div>
