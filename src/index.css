@@ -12,6 +12,12 @@
   font-family: Poppins, sans-serif;
 }
 
+
+
+.carousel-image{
+  height:80%;
+  width: 80%;
+}
 .container {
   width: calc(100% - 48px) !important;
   max-width: 1200px !important;

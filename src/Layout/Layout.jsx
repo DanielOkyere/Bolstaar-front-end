@@ -3,7 +3,7 @@ import SideBar from "../components/SideBar";
 import NavBar from "../components/rebuild/NavBar";
 import { Outlet } from "react-router-dom";
 import NavAtom from "../recoil/Atoms/NavAtom";
-import Footer from "../components/Footer";
+import Footer from "../components/rebuild/Footer/Footer";
 import { useRecoilValue, useSetRecoilState } from "recoil";
 import Container from "react-bootstrap/Container";
 function Layout() {

@@ -1,9 +1,10 @@
 import { Carousel } from "react-bootstrap";
 import React from "react";
 import { useState } from "react";
-import slider1 from "../Assets/Images/slider1.jpg";
-import slider2 from "../Assets/Images/slider2.jpg";
-import slider3 from "../Assets/Images/slider3.jpg";
+import {
+  slider1,
+  slider2, slider3
+} from "../Assets/Images/fwdwhoweare"
 import Container from "react-bootstrap/Container";
 function ControlledCarousel() {
   return (
@@ -27,7 +28,7 @@ function ControlledCarousel() {
               </div>
             </div>
             <div className="col hero-img">
-              <img className="d-block" src={slider1} alt="First slide" />
+              <img className="d-block rounded img-fluid carousel-image" src={slider1} alt="First slide"  />
             </div>
           </div>
         </Carousel.Item>
@@ -49,7 +50,7 @@ function ControlledCarousel() {
               </div>
             </div>
             <div className="col hero-img">
-              <img className="d-block " src={slider2} alt="Second slide" />
+              <img className="d-block  rounded img-fluid carousel-image " src={slider2} alt="Second slide" />
             </div>
           </div>
         </Carousel.Item>
@@ -70,8 +71,8 @@ function ControlledCarousel() {
                 </div>
               </div>
             </div>
-            <div className="col hero-img">
-              <img className="d-block " src={slider3} alt="Third slide" />
+            <div className="col hero-img ">
+              <img className="d-block rounded img-fluid carousel-image" src={slider3} alt="Third slide" />
             </div>
           </div>
         </Carousel.Item>
