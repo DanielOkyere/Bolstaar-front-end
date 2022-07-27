@@ -15,7 +15,7 @@ function ControlledCarousel() {
             <div className="col-sm-12 col-md-6">
               <div className="pt-4">
                 <div className="row mt-4">
-                  <div className="jumbotron align-items-center">
+                  <div className="jumbotron align-items-center bg-light">
                     <h1 className="hero-h1">
                       Get quality farm technologies & best farm techniques
                     </h1>
@@ -37,7 +37,7 @@ function ControlledCarousel() {
             <div className="col-sm-12 col-md-6">
               <div className="pt-4">
                 <div className="row mt-4">
-                  <div className="jumbotron align-items-center">
+                  <div className="jumbotron align-items-center bg-light">
                     <h1 className="hero-h1">
                       Get quality farm technologies & best farm techniques
                     </h1>
@@ -59,7 +59,7 @@ function ControlledCarousel() {
             <div className="col-sm-12 col-md-6">
               <div className="pt-4">
                 <div className="row mt-4">
-                  <div className="jumbotron align-items-center">
+                  <div className="jumbotron align-items-center bg-light">
                     <h1 className="hero-h1">
                       Get quality farm technologies & best farm techniques
                     </h1>
