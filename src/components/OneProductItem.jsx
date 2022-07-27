@@ -1,5 +1,5 @@
 import React from 'react'
-import DroneImage from '../Assets/Images/drones.png'
+// import DroneImage from '../Assets/Images/drones.png'
 import {FaEye} from "react-icons/fa"
 import { Link } from 'react-router-dom'
 function OneProductItem() {

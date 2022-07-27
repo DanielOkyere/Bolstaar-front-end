@@ -28,7 +28,7 @@ function ControlledCarousel() {
               </div>
             </div>
             <div className="col hero-img">
-              <img className="d-block rounded img-fluid carousel-image" src={slider1} alt="First slide"  />
+              <img className="d-block rounded img-fluid " src={slider1} alt="First slide"  />
             </div>
           </div>
         </Carousel.Item>
@@ -50,7 +50,7 @@ function ControlledCarousel() {
               </div>
             </div>
             <div className="col hero-img">
-              <img className="d-block  rounded img-fluid carousel-image " src={slider2} alt="Second slide" />
+              <img className="d-block  rounded img-fluid " src={slider2} alt="Second slide" />
             </div>
           </div>
         </Carousel.Item>
@@ -72,7 +72,7 @@ function ControlledCarousel() {
               </div>
             </div>
             <div className="col hero-img ">
-              <img className="d-block rounded img-fluid carousel-image" src={slider3} alt="Third slide" />
+              <img className="d-block rounded img-fluid " src={slider3} alt="Third slide" />
             </div>
           </div>
         </Carousel.Item>

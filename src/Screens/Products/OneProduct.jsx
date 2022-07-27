@@ -14,7 +14,7 @@ import Slider from "react-slick";
 import {ImCross} from 'react-icons/im'
 import {BiHeart} from 'react-icons/bi'
 // import { useSetRecoilState } from 'recoil'
-import DroneImage from '../../Assets/Images/drones.png'
+// import DroneImage from '../../Assets/Images/drones.png'
 import {IoIosArrowBack,IoIosArrowForward} from 'react-icons/io'
 function OneProduct() {
   const imageUrls =[

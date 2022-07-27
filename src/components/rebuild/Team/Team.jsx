@@ -15,7 +15,7 @@ function TeamImages() {
                         TeamMembers.map(({name, role, img_url})=>(
                        <div className="col-md-6 col-lg-4" key={name}>
                             <div className="card text-center">
-                                <img src={img_url} alt="Card image cap" />
+                                <img src={img_url} alt="Card image cap" className="card-img-top"/>
                                 <div className="card-body">
                                     <h4 className="card-title">
                                         {name}
