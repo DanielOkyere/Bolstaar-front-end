@@ -25,7 +25,7 @@ function Menu() {
                             <li className="mr-12">
                                 <Link
                                     to="/"
-                                    className="text-gray-500 text-2xl hover:text-gray-600 font-[600]"
+                                    className="text-gray-50gh repo clone DanielOkyere/Bolstaar-front-end0 text-2xl hover:text-gray-600 font-[600]"
                                 >
                                     Home
                                 </Link>
@@ -43,13 +43,13 @@ function Menu() {
                     <div className="hidden xl:block xl:w-1/3">
                         <div className="flex items-center justify-end gap-x-5 ">
                             <Link
-                                to="/login"
+                                to="`${process.env.BACKEND_URL}"
                                 className="px-16 py-4 rounded-full inline-block  text-lg leading-5 bg-transparent-700 hover:bg-green-600 font-semibold focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
                             >
                                 Login
                             </Link>
                             <Link
-                                to="/signup/main"
+                                to="`${process.env.BACKEND_URL}"
                                 className="px-16 py-4 rounded-full inline-block  text-lg  leading-5 text-blue-50 bg-green-500 hover:bg-green-600 font-semibold focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
                             >
                                 signup

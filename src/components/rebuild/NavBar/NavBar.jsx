@@ -2,13 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { IoIosMenu, IoIosClose } from "react-icons/io";
 import { useRecoilState } from "recoil";
-
 import BolstarLogo from "../../../Assets/Images/nav-logo.svg";
 import NavAtom from "../../../recoil/Atoms/NavAtom";
 
 import { NavBarRoot } from "./NavBar.style";
 import { navList } from "./NavBar.data";
 
+const BACKEND = import.meta.env.VITE_SERVER_URL;
 function NavBar() {
   const [isOpen, setIsOpen] = useRecoilState(NavAtom);
 
@@ -81,12 +81,10 @@ function NavList(props) {
 function Buttons() {
   return (
     <div className="buttons">
-      <Link className="btn btn-empty" to="/login">
-        Login
-      </Link>
-      <Link className="btn btn-primary" to="/signup/main">
+     <a className="btn btn-empty" href={`${BACKEND}` }>Login</a>
+      <a className="btn btn-primary" href={`${BACKEND}`}>
         Sign up
-      </Link>
+      </a>
     </div>
   );
 }
