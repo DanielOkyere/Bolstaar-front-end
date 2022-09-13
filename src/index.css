@@ -12,6 +12,10 @@
   font-family: Poppins, sans-serif;
 }
 
+.card_image{
+  width:auto;
+  height: 350px;
+}
 
 
 .carousel-image{

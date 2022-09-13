@@ -1,9 +1,11 @@
 import images from "../../../Assets/"
-const {Daniel, Yaa, Theophilus} = images;
+const {Daniel, Yaa, Theophilus, jalil, peter} = images;
 const TeamMembers = [
     { name: 'Daniel Okyere', role: "Technical Lead", img_url: Daniel },
     { name: 'Yaa Amoakoah Frempong', role: "Team Lead", img_url: Yaa },
-    { name: 'Theophilus Gyamo', role: "Business Lead", img_url: Theophilus }
+    { name: 'Theophilus Gyamo', role: "Business Lead", img_url: Theophilus },
+    { name: 'Peter', role: "Team member", img_url:peter},
+    { name: 'Jalil', role: "Team member", img_url:jalil}
 ]
 function TeamImages() {
     return (
@@ -15,7 +17,7 @@ function TeamImages() {
                         TeamMembers.map(({name, role, img_url})=>(
                        <div className="col-md-6 col-lg-4" key={name}>
                             <div className="card text-center">
-                                <img src={img_url} alt="Card image cap" className="card-img-top"/>
+                                <img src={img_url} alt="Card image cap" className="card-img-top card_image"/>
                                 <div className="card-body">
                                     <h4 className="card-title">
                                         {name}
