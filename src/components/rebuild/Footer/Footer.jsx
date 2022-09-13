@@ -52,11 +52,11 @@ function Footer() {
                                 </div>
                                 <div className="footer-social-icon">
                                     <span>Follow Us</span>
-                                    <a href="">
+                                    <a href="https://facebook.com/bolstaar">
                                         <i className="fab fa-facebook-f facebook-bg"></i>
                                     </a>
-                                    <a href="">
-                                        <i className="fab fa-twitter twitter-bg"></i>
+                                    <a href="https://www.instagram.com/bolstaar_">
+                                        <i className="fa-brands fa-instagram" ></i>
                                     </a>
                                 </div>
                             </div>
