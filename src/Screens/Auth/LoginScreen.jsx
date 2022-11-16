@@ -33,6 +33,7 @@ function LoginScreen() {
           Not yet signed Up?
           <Link to='/signup/main'><span className='text-green-400 mx-2'>Sign Up Here</span></Link>
         </p>      </div>
+
     </div>
   )
 }
