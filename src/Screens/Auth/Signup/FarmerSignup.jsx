@@ -2,63 +2,63 @@ import React from 'react'
 import LoginBackground from "../../../Assets/Images/Farmers.jpg"
 import BolstarLogo from '../../../Assets/Images/BolStar_Logo.png'
 import ImageFarmerSignup from '../../../Assets/Images/ImageFarmerSignup.jpg'
-import {MdLocationPin,MdHomeWork,MdCall } from 'react-icons/md'
+import { MdLocationPin, MdHomeWork, MdCall } from 'react-icons/md'
 import { Link } from 'react-router-dom'
 function FarmerSignup() {
   return (
-    <div style={{ backgroundImage :  ` url(${LoginBackground})`  , backgroundRepeat : "no-repeat", backgroundSize : "cover"}}
-    className='w-screen h-screen  flex flex flex-col gap-y-7 justify-center items-center'
-   >
-    
-  <form className='   w-[29rem] md:w-[38rem] h-[48rem] shadow-xl  border-2  px-14  gap-y-4 rounded-2xl justify-center  bg-white flex flex-col p-2  '>
-  <img src={BolstarLogo}  className='h-24 w-30 self-center ' />
-  <img src={ImageFarmerSignup}  className='h-24 w-30 self-center ' />
-    <div  >
-  <label
-           className="block mb-2 text-gray-800 font-medium leading-6 text-xl font-900"
-           htmlFor=""
-         >
-Address
-         </label>
-      {/* logo et input */}
-      <div className='flex border-2   border-gray-200 gap-x-2  items-center w-full   h-[4rem]  '>
-           <MdLocationPin  size={35} className='fill-current text-gray-200 w-1/4   ' /> 
-           <input type='text' className='w-3/4 text-xs md:text-lg  outline-none h-full text-xl text-gray-500 appearence-none' placeholder='enter your Address '   />
-      </div>
-       </div>
-    <div  >
-  <label
-           className="block mb-2 text-gray-800 font-medium leading-6 text-xl font-900"
-           htmlFor=""
-         >
-Phone Number 
-         </label>
-      {/* logo et input */}
-      <div className='flex border-2   border-gray-200 gap-x-2  items-center w-full   h-[4rem]  '>
-           <MdCall  size={35} className='fill-current text-gray-200 w-1/4   ' /> 
-           <input type='text' className='w-3/4 text-xs md:text-lg  outline-none h-full text-xl text-gray-500 appearence-none' placeholder='enter your  phoneNumber'   />
-      </div>
-       </div>
-    <div>
-  <label
-           className="block mb-2 text-gray-800 font-medium leading-6 text-xl font-900  "
-           htmlFor=""
-         >
-   Farm Size
-         </label>
-      {/* logo et input */}
-      <div className='flex border-2 border-gray-200 gap-x-2  items-center w-full  h-[4rem] '>
-           <MdHomeWork  size={35} className='fill-current text-gray-200 w-1/4   ' /> 
-           <input type='password' className='w-3/4 text-xs  md:text-lg outline-none h-full text-xl text-gray-500'  placeholder='enter your Farmsize '/>
-      </div>
-       </div>
 
-<input  type="submit" className='bg-green-700 w-56 font-[700] mt-10 uppercase cursor-pointer hover:bg-green-900 shadow-md  h-16 rounded-full text-white self-center '  value="Signup" />
+    <div className='flex items-center justify-center my-24' >
+      <div className="w-full h-full bg-white rounded shadow-lg p-8 m-4 md:max-w-sm md:mx-auto">
+        <div className="flex flex-col justify-center items-center">
+          <img src={BolstarLogo} className='self-center ' />
+          <img src={ImageFarmerSignup} className='h-24 w-30 justify-center items-center mb-6' />
+        </div>
+        <form className='mb-4 items-center'>
+          <div className="mb-4 md:w-full">
+            <label htmlFor="phone" className="block text-xs mb-1">
+              Phone Number
+            </label>
+            <input type="text" className="w-full border rounded p-2 outline-none focus:shadow-outline"
+              name="Phone" id="Phone" placeholder="Phone Number" />
+          </div>
+          <div className="mb-4 md:w-full">
+            <label htmlFor="location" className="block text-xs mb-1">
+              Location
+            </label>
+            <input type="text" className="w-full border rounded p-2 outline-none focus:shadow-outline"
+              name="location" id="location" placeholder="Farm Location" />
+          </div>
+          <div className="mb-4 md:w-full">
+            <label htmlFor="location" className="block text-xs mb-1">
+              Main Produce
+            </label>
+            <input type="text" className="w-full border rounded p-2 outline-none focus:shadow-outline"
+              name="produce" id="produce" placeholder="Main Produce" />
+          </div>
+          <div className="mb-4 md:w-full">
+            <label htmlFor="farmSize" className="block text-xs mb-1">
+              Farm Size
+            </label>
+            <select name="userOptions" className="mb-4 md:w-full">
+              <option value={1}>1 Acre</option>
+              <option value={2}>~ 2 - 4 Acre</option>
+              <option value={3}>larger than 4 Acre</option>
+              <option value={4}>other</option>
+            </select>
+          </div>
+          <div className="flex justify-center items-center">
+            <input type="submit" className='bg-green-700 w-56 font-[700] mt-10 uppercase cursor-pointer hover:bg-green-900 shadow-md  h-16 rounded-full text-white self-center ' value="Sign Up" />
+          </div>
 
-  </form>
-   
+        </form>
 
-   </div>
+        <p className="text-lg font-lg">
+          Already Signed Up!
+          <Link to='/login'><span className='text-green-400 mx-2'>Login Here</span></Link>
+        </p>      </div>
+    </div>
+
+
   )
 }
 

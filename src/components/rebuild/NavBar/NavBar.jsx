@@ -81,10 +81,10 @@ function NavList(props) {
 function Buttons() {
   return (
     <div className="buttons">
-     <a className="btn btn-empty" href={`${BACKEND}` }>Login</a>
-      <a className="btn btn-primary" href={`${BACKEND}`}>
+      <Link className="btn btn-empty" to='/login'>Login</Link>
+      <Link className="btn btn-primary" to='/signin'>
         Sign up
-      </a>
+      </Link>
     </div>
   );
 }
