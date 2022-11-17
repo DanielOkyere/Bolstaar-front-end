@@ -82,7 +82,7 @@ function Buttons() {
   return (
     <div className="buttons">
       <Link className="btn btn-empty" to='/login'>Login</Link>
-      <Link className="btn btn-primary" to='/signin'>
+      <Link className="btn btn-primary" to='/signup/main'>
         Sign up
       </Link>
     </div>
