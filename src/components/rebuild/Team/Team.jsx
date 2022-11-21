@@ -1,11 +1,11 @@
 import images from "../../../Assets/"
 const {Daniel, Yaa, Theophilus, jalil, peter} = images;
 const TeamMembers = [
-    { name: 'Daniel Okyere', role: "Technical Lead", img_url: Daniel },
+    { name: 'Daniel Okyere', role: "Technical Officer", img_url: Daniel },
     { name: 'Yaa Amoakoah Frempong', role: "Team Lead", img_url: Yaa },
     { name: 'Theophilus Gyamo', role: "Business Lead", img_url: Theophilus },
-    { name: 'Peter', role: "Team member", img_url:peter},
-    { name: 'Jalil', role: "Team member", img_url:jalil}
+    { name: 'Peter', role: "Operations", img_url:peter},
+    { name: 'Jalil', role: "Finance", img_url:jalil}
 ]
 function TeamImages() {
     return (

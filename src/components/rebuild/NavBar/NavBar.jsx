@@ -8,7 +8,7 @@ import NavAtom from "../../../recoil/Atoms/NavAtom";
 import { NavBarRoot } from "./NavBar.style";
 import { navList } from "./NavBar.data";
 
-const BACKEND = import.meta.env.VITE_SERVER_URL;
+
 function NavBar() {
   const [isOpen, setIsOpen] = useRecoilState(NavAtom);
 
