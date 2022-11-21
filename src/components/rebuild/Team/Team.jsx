@@ -1,4 +1,4 @@
-import images from "../../../Assets/"
+import images from "../../../Assets"
 const {Daniel, Yaa, Theophilus, jalil, peter} = images;
 const TeamMembers = [
     { name: 'Daniel Okyere', role: "Technical Lead", img_url: Daniel },

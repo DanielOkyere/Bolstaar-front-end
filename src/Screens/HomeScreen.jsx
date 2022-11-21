@@ -1,6 +1,6 @@
 import React from "react";
-import ControlledCarousel from "../components/carousel_component";
-import AboutSection from "../components/About_section";
+import ControlledCarousel from "../Components/carousel_component";
+import AboutSection from "../Components/About_section";
 function HomeScreen() {
     return (
         <div>

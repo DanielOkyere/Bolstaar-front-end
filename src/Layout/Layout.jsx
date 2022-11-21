@@ -1,9 +1,9 @@
 import React from "react";
-import SideBar from "../components/SideBar";
-import NavBar from "../components/rebuild/NavBar";
+import SideBar from "../Components/SideBar";
+import NavBar from "../Components/rebuild/NavBar";
 import { Outlet } from "react-router-dom";
 import NavAtom from "../recoil/Atoms/NavAtom";
-import Footer from "../components/rebuild/Footer/Footer";
+import Footer from "../Components/rebuild/Footer/Footer";
 import { useRecoilValue, useSetRecoilState } from "recoil";
 import Container from "react-bootstrap/Container";
 function Layout() {

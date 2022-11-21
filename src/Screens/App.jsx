@@ -1,16 +1,15 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./index.css";
+import "../Styles/index.css";
 import { RecoilRoot } from "recoil";
 // importation des screens
-import HomeScreen from "./Screens/HomeScreen";
-import AboutUsScreen from "./Screens/AboutUsScreen";
-import MainSignup from "./Screens/Auth/Signup/MainSignup";
-import FarmerSignup from "./Screens/Auth/Signup/FarmerSignup";
-import ProviderSignup from "./Screens/Auth/Signup/ProviderSignup";
-import LoginScreen from "./Screens/Auth/LoginScreen";
-import OneProduct from "./Screens/Products/OneProduct";
-import AllProducts from "./Screens/Products/AllProducts";
-import Layout from "./Layout/Layout";
+import HomeScreen from "./HomeScreen";
+import AboutUsScreen from "./AboutUsScreen";
+import MainSignup from "./Auth/Signup/MainSignup";
+import FarmerSignup from "./Auth/Signup/FarmerSignup";
+import ProviderSignup from "./Auth/Signup/ProviderSignup";
+import LoginScreen from "./Auth/LoginScreen";
+import AllProducts from "./Products/AllProducts";
+import Layout from "../Layout/Layout";
 function App() {
   return (
     <RecoilRoot>

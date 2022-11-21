@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import TeamImages from "../components/rebuild/Team/Team"
+import TeamImages from "../Components/rebuild/Team/Team"
 
 function AboutUsScreen() {
     return (

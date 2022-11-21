@@ -1,5 +1,5 @@
 import React from 'react'
-import OneProductItem from '../../components/OneProductItem'
+import OneProductItem from '../../Components/OneProductItem'
 import {FaSearch} from 'react-icons/fa'
 function AllProducts() {
   return (

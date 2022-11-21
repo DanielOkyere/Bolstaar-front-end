@@ -149,7 +149,7 @@ body .btn-primary:active {
 
 .banner {
   padding-block: 96px;
-  background-image: url("./Assets/Images/Rectangle10.png");
+  background-image: url("../Assets/Images/Rectangle10.png");
   background-size: cover;
 }
 
