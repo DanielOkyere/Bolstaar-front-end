@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import BolstarLogo from '../../Assets/Images/BolStar_Logo.png'
 import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios';
