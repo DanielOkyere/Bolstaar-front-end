@@ -9,7 +9,7 @@ function LoginScreen() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
-  const BACKEND = import.meta.env.VITE_LOCAL_SERVER;
+  const BACKEND = import.meta.env.VITE_LOCAL_SERVER || import.meta.env.VITE_SERVER_URL;
 
   const responseBody = { email: "", password: "" }
 
