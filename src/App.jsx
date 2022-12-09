@@ -10,6 +10,7 @@ import ProviderSignup from "./Screens/Auth/Signup/ProviderSignup";
 import LoginScreen from "./Screens/Auth/LoginScreen";
 import OneProduct from "./Screens/Products/OneProduct";
 import AllProducts from "./Screens/Products/AllProducts";
+import Dashboard from "./Screens/Dashboard/Dashboard";
 import Layout from "./Layout/Layout";
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/signup/farmer" element={<FarmerSignup />} />
           <Route path="/signup/provider" element={<ProviderSignup />} />
           <Route path="/login" element={<LoginScreen />} />
+          <Route path="/dashboard" element={<Dashboard/>}/>
         </Routes>
       </Router>
     </RecoilRoot>

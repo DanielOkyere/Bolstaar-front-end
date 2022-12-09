@@ -180,6 +180,12 @@ body .btn-primary:active {
   }
 }
 
+@layer components {
+  .sidebar{
+    transition:all .4s ease-in-out;
+  }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
