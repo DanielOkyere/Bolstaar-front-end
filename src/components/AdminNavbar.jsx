@@ -1,5 +1,5 @@
 import React from "react";
-import UserDropdown from "../Components/Dropdowns/UserDropdown";
+import UserDropdown from "./Dropdowns/UserDropdown";
 
 export default function AdminNavBar(){
     return (<>

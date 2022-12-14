@@ -153,6 +153,12 @@ body .btn-primary:active {
   background-size: cover;
 }
 
+.not_found {
+  background-image: url("./Assets/Images/notfound.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .banner h1 {
   max-width: 500px;
   margin-inline: auto;
