@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import BolstaarLogo from '../../Assets/Images/nav-logo.svg'
+import BolstaarLogo from '../Assets/Images/nav-logo.svg'
 function AdminSideBar() {
     return (<div className="min-h-screen bg-white-100">
         <div className="sidebar min-h-screen w-[3.35rem] overflow-hidden border-r hover:w-56 hover:bg-white hover:shadow-lg">
