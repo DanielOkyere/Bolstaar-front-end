@@ -33,7 +33,7 @@ function Footer() {
                                     <i className="far fa-envelope-open"></i>
                                     <div className="cta-text">
                                         <h4>Mail Us</h4>
-                                        <span>bolstaar@info.com</span>
+                                        <span>info@bolstaar.com</span>
                                     </div>
                                 </div>
                             </div>
