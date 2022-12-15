@@ -9,7 +9,7 @@ import FarmerSignup from "./Screens/Auth/Signup/FarmerSignup";
 import ProviderSignup from "./Screens/Auth/Signup/ProviderSignup";
 import NotFound from "./Screens/404";
 import LoginScreen from "./Screens/Auth/LoginScreen";
-// import Dashboard from "./Screens/Dashboard";
+import Dashboard from "./Screens/Dashboard";
 import Layout from "./Layout/Layout";
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
           <Route path="/signup/farmer" element={<FarmerSignup />} />
           <Route path="/signup/provider" element={<ProviderSignup />} />
           <Route path="/login" element={<LoginScreen />} />
-          {/* <Route path="/dashboard" element={<Dashboard/>}/> */}
+          <Route path="/dashboard" element={<Dashboard/>}/>
           <Route path="*" element={<NotFound/>}/>
         </Routes>
       </Router>
