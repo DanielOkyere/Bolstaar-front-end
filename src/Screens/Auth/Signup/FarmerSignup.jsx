@@ -1,8 +1,5 @@
 import React from 'react'
-import LoginBackground from "../../../Assets/Images/Farmers.jpg"
 import BolstarLogo from '../../../Assets/Images/BolStar_Logo.png'
-import ImageFarmerSignup from '../../../Assets/Images/ImageFarmerSignup.jpg'
-import { MdLocationPin, MdHomeWork, MdCall } from 'react-icons/md'
 import { Link } from 'react-router-dom'
 function FarmerSignup() {
   return (
@@ -11,7 +8,6 @@ function FarmerSignup() {
       <div className="w-full h-full bg-white rounded shadow-lg p-8 m-4 md:max-w-sm md:mx-auto">
         <div className="flex flex-col justify-center items-center">
           <img src={BolstarLogo} className='self-center ' />
-          <img src={ImageFarmerSignup} className='h-24 w-30 justify-center items-center mb-6' />
         </div>
         <form className='mb-4 items-center'>
           <div className="mb-4 md:w-full">

@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import BolstarLogo from '../../../Assets/Images/BolStar_Logo.png'
-import ImageProviderSignup from '../../../Assets/Images/ImageProviderSignup.jpg'
+
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
