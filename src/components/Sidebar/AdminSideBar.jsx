@@ -8,7 +8,7 @@ function AdminSideBar() {
             <div className="flex h-screen flex-col justify-between pt-2 pb-6">
                 <div>
                     <div className="w-max p-2.5">
-                        <img src={BolstaarLogo} className="w-32" alt="" />
+                        <img src={BolstaarLogo} className="w-8" alt="Bolstaar Logo" />
                     </div>
                     <ul className="mt-6 space-y-2 tracking-wide">
                         <li className="min-w-max">
