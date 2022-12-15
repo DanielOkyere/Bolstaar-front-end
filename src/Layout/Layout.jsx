@@ -1,5 +1,4 @@
 import React from "react";
-import SideBar from "../Components/Sidebar/SideBar";
 import NavBar from "../components/rebuild/NavBar";
 import { Outlet } from "react-router-dom";
 import NavAtom from "../recoil/Atoms/NavAtom";
