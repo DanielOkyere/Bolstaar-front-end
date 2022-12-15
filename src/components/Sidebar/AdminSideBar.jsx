@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import BolstaarLogo from '../../Assets/Images/BolStar_logo.png'
-export default function AdminSideBar() {
+ function AdminSideBar() {
     return (<div className="min-h-screen bg-white-100">
         <div className="sidebar min-h-screen w-[3.35rem] overflow-hidden border-r hover:w-56 hover:bg-white hover:shadow-lg">
             <div className="flex h-screen flex-col justify-between pt-2 pb-6">
@@ -71,3 +71,5 @@ export default function AdminSideBar() {
         </div>
     </div>)
 }
+
+export default AdminSideBar;
