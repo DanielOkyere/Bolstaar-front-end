@@ -75,7 +75,6 @@ function SideBar() {
           </div>
         </nav>
         <div onClick={CloseNav} className="navbar-close absolute top-5 p-4 right-3" >
-
           <ImCross size={16} className='hover:text-blue-400 text-current ' color='text-white' />
         </div>
 
