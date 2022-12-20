@@ -1,6 +1,6 @@
 import React from "react";
 import { Fragment, useRef, useState } from "react";
-import Modal from "../Components/modal";
+import Modal from "../Components/Modal";
 function Dashboard() {
     const [showModal, setShowModal] = useState(false);
 
