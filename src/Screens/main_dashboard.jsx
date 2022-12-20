@@ -1,15 +1,12 @@
 import React from "react";
 import { Fragment, useRef, useState } from "react";
-
-import NavBar from "../components/rebuild/NavBar";
-import Footer from "../Components/rebuild/Footer/Footer"
 import Modal from "../Components/modal";
 function Dashboard() {
     const [showModal, setShowModal] = useState(false);
 
     const handleOnClose = () => setShowModal(false);
     return (<>
-        {/* <NavBar /> */}
+
         <div className="container mt-3">
           <h1 className="h1 mx-auto mb-9">Welcome,</h1>
           <h4 className="h4 mb-5">Kindly select what you would want from us</h4>
@@ -22,7 +19,6 @@ function Dashboard() {
 
       <Modal onClose={handleOnClose} visible={showModal} />
 
-        {/* <Footer/> */}
     </>)
 }
 
