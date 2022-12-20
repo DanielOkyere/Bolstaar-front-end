@@ -9,7 +9,7 @@ import FarmerSignup from "./Screens/Auth/Signup/FarmerSignup";
 import ProviderSignup from "./Screens/Auth/Signup/ProviderSignup";
 import NotFound from "./Screens/404";
 import LoginScreen from "./Screens/Auth/LoginScreen";
-import Dashboard from "./Screens/Dashboard";
+import Dashboard from "./Screens/main_dashboard";
 import Layout from "./Layout/Layout";
 function App() {
   return (
