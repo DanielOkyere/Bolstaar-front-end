@@ -11,6 +11,8 @@ module.exports = {
         firstGreen : "var(--firstGreen)",
         SecondGreen : "var(--SecondGreen)",
         TernaryGreen : "var(--TernaryGreen)",
+        "dark-purple": "#081A51",
+        "light-white": "rgba(255, 255,255,0.17)"
     
       }
     },

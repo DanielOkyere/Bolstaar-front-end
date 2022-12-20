@@ -98,6 +98,25 @@
   text-align: justify;
 }
 
+.navlogo{
+  background-image: url("./Assets/Images/nav-logo.svg");
+  background-size: cover;
+}
+
+.farm_tools{
+  background-image: url("./Assets/Images/farmtool.jpg");
+  background-size: cover;
+}
+
+.farm_machinery{
+  background-image: url("./Assets/Images/tractor-image.jpg");
+  background-size: cover;
+}
+
+.accessories{
+  background-image: url("./Assets/Images/accessories.jpg");
+  background-size: cover;
+}
 body .btn {
   box-sizing: border-box;
   height: 50px;
