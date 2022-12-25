@@ -1,4 +1,3 @@
-
 import React, { Fragment, useRef, useState } from 'react'
 function RightContent () {
   return (
