@@ -1,4 +1,3 @@
-
 import React, { Fragment, useRef, useState } from 'react'
 function RightContent () {
   return (
@@ -167,6 +166,5 @@ function Modal({ visible, onClose }) {
           </div>
       </>)
 }
-
 export default Dashboard
 
