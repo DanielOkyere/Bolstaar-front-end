@@ -15,7 +15,7 @@ function Modal({ visible, onClose }) {
             ">
                 <div className="bg-white p-2 rounded">
                     <form className='mb-4 items-center' >
-                        <div className="mb-4 w-1/2 md:w-full">
+                        <div className="mb-4  md:w-full">
                             <label htmlFor="item_name" className="block text-xs mb-1">
                                 Item Name
                             </label>

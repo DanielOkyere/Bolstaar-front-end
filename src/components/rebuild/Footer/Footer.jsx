@@ -24,7 +24,7 @@ function Footer() {
                                     <i className="fas fa-phone"></i>
                                     <div className="cta-text">
                                         <h4>Call Us</h4>
-                                        <span>+233 0001111</span>
+                                        <span>0303962185</span>
                                     </div>
                                 </div>
                             </div>
