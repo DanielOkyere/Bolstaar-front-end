@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react'
 
-function Sponsors() {
-    return (
-        <>
-        
-        </>
-    )
+function Sponsors () {
+  return (
+    <>
+
+    </>
+  )
 }
 
-export default Sponsors;
+export default Sponsors
