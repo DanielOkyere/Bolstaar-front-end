@@ -13,18 +13,24 @@ function MainContent () {
   const handleOnClose = () => setShowModal(false)
   return (
     <>
-      <div className='mt-3'>
-        <ul className='flex flex-wrap gap-10  md:flex-row'>
-          <div className='farm_tools cursor-pointer rounded-lg  shadow-lg' onClick={() => setShowModal(true)}>
-            <h4>Farm Tools</h4>
-          </div>
-          <div className='farm_machinery cursor-pointer rounded-lg  shadow-lg' onClick={() => setShowModal(true)}>
-            <h4>Farm machinery</h4>
-          </div>
-          <div className='accessories cursor-pointer rounded-lg  shadow-lg' onClick={() => setShowModal(true)}>
-            <h4>Other Accessories</h4>
-          </div>
-        </ul>
+      <div className='mt-3 container'>
+        <div className='flex flex-col mx-24 mt-16'>
+          <ul>
+            <div className='flex flex-row space-x-24 space-y-24'>
+              <div className='farm_tools cursor-pointer rounded-lg  shadow-lg w-32 h-32' onClick={() => setShowModal(true)}>
+                <h4>Farm Tools</h4>
+              </div>
+              <div className='farm_machinery cursor-pointer rounded-lg  shadow-lg w-32 h-32' onClick={() => setShowModal(true)}>
+                <h4>Farm machinery</h4>
+              </div>
+            </div>
+            <div className='mx-auto mt-8 align-self-center'>
+              <div className='accessories cursor-pointer rounded-lg  shadow-lg w-32 h-32' onClick={() => setShowModal(true)}>
+                <h4>Other Accessories</h4>
+              </div>
+            </div>
+          </ul>
+        </div>
       </div>
       <Modal onClose={handleOnClose} visible={showModal} />
     </>
