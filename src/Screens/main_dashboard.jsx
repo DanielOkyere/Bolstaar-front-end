@@ -7,6 +7,7 @@ function RightContent () {
   )
 }
 
+
 function MainContent () {
   const [showModal, setShowModal] = useState(false)
   const handleOnClose = () => setShowModal(false)
