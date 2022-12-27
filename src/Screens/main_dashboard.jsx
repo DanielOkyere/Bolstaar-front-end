@@ -1,13 +1,11 @@
-import React, { Fragment, useRef, useState } from 'react'
-function RightContent () {
-  return (
-    <>
-      <MainContent />
-    </>
-  )
+import React from "react";
+import { Fragment, useRef, useState } from "react";
+
+function RightContent() {
+  return (<>
+    <MainContent />
+  </>)
 }
-
-
 function MainContent () {
   const [showModal, setShowModal] = useState(false)
   const handleOnClose = () => setShowModal(false)
