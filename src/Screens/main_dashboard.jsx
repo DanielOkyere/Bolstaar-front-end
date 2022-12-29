@@ -1,24 +1,26 @@
-import React from "react";
-import { Fragment, useRef, useState } from "react";
 
-function RightContent() {
-  return (<>
-    <MainContent />
-  </>)
+import React, { Fragment, useRef, useState } from 'react'
+function RightContent () {
+  return (
+    <>
+      <MainContent />
+    </>
+  )
 }
+
 function MainContent () {
   const [showModal, setShowModal] = useState(false)
   const handleOnClose = () => setShowModal(false)
   return (
     <>
       <div className='mt-3 container'>
-        <div className='flex flex-col mx-24 mt-16 align-items-center'>
+        <div className='flex flex-col mx-24 mt-16'>
           <ul>
-            <div className='flex flex-row space-x-24 space-y-24 align-items-center'>
-              <div className='farm_tools cursor-pointer rounded-lg  shadow-lg w-32 h-32 align-self-center' onClick={() => setShowModal(true)}>
+            <div className='flex flex-row space-x-24 space-y-24'>
+              <div className='farm_tools cursor-pointer rounded-lg  shadow-lg w-32 h-32' onClick={() => setShowModal(true)}>
                 <h4>Farm Tools</h4>
               </div>
-              <div className='farm_machinery cursor-pointer rounded-lg  shadow-lg w-32 h-32 align-self-center' onClick={() => setShowModal(true)}>
+              <div className='farm_machinery cursor-pointer rounded-lg  shadow-lg w-32 h-32' onClick={() => setShowModal(true)}>
                 <h4>Farm machinery</h4>
               </div>
             </div>
