@@ -5,8 +5,9 @@ import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import NavBar from '../../components/rebuild/NavBar'
-import Footer from '../../components/rebuild/Footer'
+import NavBar from '../../components/rebuild/NavBar';
+import Footer from '../../components/rebuild/Footer';
+
 function LoginScreen() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -49,35 +50,37 @@ function LoginScreen() {
 
 
   return (
-    <div>
-      <NavBar/>
+    <>
+	  <NavBar/>
     <div className='flex items-center justify-center my-24' >
       <div className="w-full h-full bg-white rounded shadow-lg p-8 m-4 md:max-w-sm md:mx-auto">
-        <img src={BolstarLogo} className='self-center' />
+        <div className='flex justify-center mb-4'>
+	  <h2 className='h2'>Add an Item</h2>
+	</div>
         <form className='mb-4 items-center' onSubmit={handleSubmit}>
           <div className="mb-4 md:w-full">
             <label htmlFor="email" className="block text-xs mb-1">
-              Email Address Or UserName
+              Item Name
             </label>
-            <input type="email" className="w-full border rounded p-2 outline-none focus:shadow-outline"
-              name="email" id="email" placeholder="Username or Email" onChange={(e) => handleChange(setEmail, e)} />
+            <input type="text" className="w-full border rounded p-2 outline-none focus:shadow-outline"
+              name="item_name" id="item__name" placeholder="Item name" onChange={(e) => handleChange(setEmail, e)} />
           </div>
           <div className="mb-4 md:w-full">
-            <label htmlFor="password" className="block text-xs mb-1">
-              Password
+            <label htmlFor="item_description" className="block text-xs mb-1">
+              Item description
             </label>
-            <input type="password" className="w-full border rounded p-2 outline-none focus:shadow-outline"
-              name="password" id="password" placeholder="Password" onChange={(e) => handleChange(setPassword, e)} />
+            <input type="item_description" className="w-full border rounded p-2 outline-none focus:shadow-outline"
+              name="item_description" id="item__description" placeholder="Item Description" onChange={(e) => handleChange(setPassword, e)} />
           </div>
           <div className="flex justify-center items-center">
-            <input type="submit" className='bg-green-700 w-56 font-[700] mt-10 uppercase cursor-pointer hover:bg-green-900 shadow-md  h-16 rounded-full text-white self-center ' value="login" />
+            <input type="submit" className='bg-green-700 w-56 font-[700] mt-10 uppercase cursor-pointer hover:bg-green-900 shadow-md  h-12 rounded-full text-white self-center ' value="submit" />
           </div>
 
         </form>
 
         <p className="text-lg font-lg">
-          Not yet signed Up?
-          <Link to='/signup/main'><span className='text-green-400 mx-2'>Sign Up Here</span></Link>
+          Want to find a product?
+          <Link to='/signup/main'><span className='text-green-400 mx-2'>Lets go!.</span></Link>
         </p>      </div>
       <ToastContainer position="bottom-right"
         autoClose={5000}
@@ -90,8 +93,8 @@ function LoginScreen() {
         pauseOnHover
         theme="light" />
     </div>
-    <Footer/>
-    </div>
+	  <Footer/>
+	  </>
   )
 }
 
