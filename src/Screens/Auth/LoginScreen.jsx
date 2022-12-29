@@ -5,6 +5,8 @@ import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import NavBar from '../../components/rebuild/NavBar'
+import Footer from '../../components/rebuild/Footer'
 function LoginScreen() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -47,6 +49,8 @@ function LoginScreen() {
 
 
   return (
+    <div>
+      <NavBar/>
     <div className='flex items-center justify-center my-24' >
       <div className="w-full h-full bg-white rounded shadow-lg p-8 m-4 md:max-w-sm md:mx-auto">
         <img src={BolstarLogo} className='self-center' />
@@ -85,6 +89,8 @@ function LoginScreen() {
         draggable
         pauseOnHover
         theme="light" />
+    </div>
+    <Footer/>
     </div>
   )
 }
