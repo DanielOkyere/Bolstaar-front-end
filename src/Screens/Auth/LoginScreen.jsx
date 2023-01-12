@@ -56,11 +56,11 @@ function LoginScreen() {
         <img src={BolstarLogo} className='self-center' />
         <form className='mb-4 items-center' onSubmit={handleSubmit}>
           <div className="mb-4 md:w-full">
-            <label htmlFor="email" className="block text-xs mb-1">
-              Email Address Or UserName
+            <label htmlFor="ItemName" className="block text-xs mb-1">
+              Item Name
             </label>
-            <input type="email" className="w-full border rounded p-2 outline-none focus:shadow-outline"
-              name="email" id="email" placeholder="Username or Email" onChange={(e) => handleChange(setEmail, e)} />
+            <input type="text" className="w-full border rounded p-2 outline-none focus:shadow-outline"
+              name="ItemName" id="email" placeholder="Item Name" onChange={(e) => handleChange(setEmail, e)} />
           </div>
           <div className="mb-4 md:w-full">
             <label htmlFor="password" className="block text-xs mb-1">

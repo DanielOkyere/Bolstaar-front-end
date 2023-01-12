@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react'
 import BolstarLogo from '../../../Assets/Images/BolStar_Logo.png'
-import { MdEmail, MdLock, MdArrowForward, MdSupervisedUserCircle } from 'react-icons/md'
 import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { toast, ToastContainer } from 'react-toastify'
@@ -79,7 +78,7 @@ function MainSignup() {
             <input type="password" className="w-full border rounded p-2 outline-none focus:shadow-outline"
               name="confirmPassword" id="confirmPassword" placeholder="confirmPassword" onChange={(e)=> handleChange(setPassword, e)}/>
           </div>
-          <div className="md:w-full">
+          <div className="flex gap-2 flex-col md:w-full">
             <label htmlFor="userOptions">Kindly let us know who you are?</label>
             <select name="userOptions" ref={selectInput} className="mb-4 md:w-full">
               <option value={1}>Farmer</option>
@@ -88,15 +87,11 @@ function MainSignup() {
             </select>
           
             <div className="flex bg-green-700 justify-center items-center cursor-pointer hover:bg-green-900 rounded-full text-white
-            h-8 w-24 self-end">
+            h-8 w-24 self-center">
               <input type="submit" className='px-3'/>
             </div>
           </div>
         </form>
-        <p className="text-lg font-lg">
-          Already Signed Up!
-          <Link to='/login'><span className='text-green-400 mx-2'>Login Here</span></Link>
-        </p>
         <ToastContainer position="bottom-right"
           autoClose={5000}
           hideProgressBar={false}

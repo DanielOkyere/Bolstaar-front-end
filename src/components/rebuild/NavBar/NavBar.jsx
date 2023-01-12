@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { IoIosMenu, IoIosClose } from "react-icons/io";
 import { useRecoilState } from "recoil";
-import BolstarLogo from "../../../Assets/Images/nav-logo.svg";
+import BolstaarLogo from "../../../Assets/Images/LOGO-removebg.svg";
 import NavAtom from "../../../recoil/Atoms/NavAtom";
 
 import { NavBarRoot } from "./NavBar.style";
@@ -58,7 +58,7 @@ function Sidebar(props) {
 function Logo() {
   return (
     <div className="logo">
-      <img src={BolstarLogo} alt="Bolstar" />
+      <img src={BolstaarLogo} alt="Bolstaar" />
     </div>
   );
 }
@@ -81,7 +81,6 @@ function NavList(props) {
 function Buttons() {
   return (
     <div className="buttons">
-      <Link className="btn btn-empty" to='/login'>Add Item</Link>
       <Link className="btn btn-primary" to='/signup/main'>
        Make a request
       </Link>

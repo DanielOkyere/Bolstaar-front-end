@@ -8,8 +8,7 @@ import MainSignup from "./Screens/Auth/Signup/MainSignup";
 import FarmerSignup from "./Screens/Auth/Signup/FarmerSignup";
 import ProviderSignup from "./Screens/Auth/Signup/ProviderSignup";
 import NotFound from "./Screens/404";
-import LoginScreen from "./Screens/Auth/LoginScreen";
-import Dashboard from "./Screens/main_dashboard";
+import Sponsors from "./Screens/Sponsors";
 import Layout from "./Layout/Layout";
 function App() {
   return (
@@ -23,8 +22,7 @@ function App() {
           <Route path="/signup/main" element={<MainSignup />} />
           <Route path="/signup/farmer" element={<FarmerSignup />} />
           <Route path="/signup/provider" element={<ProviderSignup />} />
-          <Route path="/login" element={<LoginScreen />} />
-          <Route path="/dashboard" element={<Dashboard/>}/>
+          <Route path="/sponsors" element={<Sponsors/>}/>
           <Route path="*" element={<NotFound/>}/>
         </Routes>
       </Router>

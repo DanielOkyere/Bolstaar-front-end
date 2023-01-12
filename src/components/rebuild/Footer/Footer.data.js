@@ -1,3 +1,7 @@
-const footerList = [{ to: "/", display: "Home" }];
+const footerList = [
+    { to: "/", display: "Home" },
+    { to: "/about", display: "About Us" },
+    { to: "/sponsors", display: "Sponsors" },
+];
 
 export { footerList };

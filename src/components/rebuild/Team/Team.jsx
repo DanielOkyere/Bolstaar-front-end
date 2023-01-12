@@ -1,11 +1,11 @@
 import images from "../../../Assets/"
 const {Daniel, Yaa, Theophilus, jalil, peter} = images;
 const TeamMembers = [
-    { name: 'Daniel Okyere', role: "Technical Officer", img_url: Daniel },
-    { name: 'Yaa Amoakoah Frempong', role: "Team Lead", img_url: Yaa },
-    { name: 'Theophilus Gyamo', role: "Business Lead", img_url: Theophilus },
-    { name: 'Peter', role: "Operations", img_url:peter},
-    { name: 'Jalil', role: "Finance", img_url:jalil}
+    { name: 'Daniel Okyere', role: "Technical Officer", img_url: Daniel, email: 'd.okyere@bolstaar.com' },
+    { name: 'Yaa Amoakoah Frempong', role: "Team Lead", img_url: Yaa, email:'y.frempong@bolstaar.com' },
+    { name: 'Theophilus Gyamo', role: "Business Lead", img_url: Theophilus, email:'t.gyamo@bolstaar.com' },
+    { name: 'Peter', role: "Operations", img_url:peter, email:'p.yiadom@bolstaar.com'},
+    { name: 'Jalil', role: "Finance", img_url:jalil, email:'j.abdul@bolstaar.com'}
 ]
 function TeamImages() {
     return (
@@ -14,7 +14,7 @@ function TeamImages() {
                 <div className="container">
                     <div className="row">
                     {
-                        TeamMembers.map(({name, role, img_url})=>(
+                        TeamMembers.map(({name, role, img_url, email})=>(
                        <div className="col-md-6 col-lg-4" key={name}>
                             <div className="card text-center">
                                 <img src={img_url} alt="Card image cap" className="card-img-top card_image"/>
@@ -25,10 +25,7 @@ function TeamImages() {
                                     <p className="card-text">{role}</p>
                                     <ul className="list-inline">
                                         <li className="list-inline-item">
-                                        <a href="" target="_blank" className="fa fa-facebook"></a>
-                                        </li>
-                                        <li className="list-inline-item">
-                                            <a href="" className="fa fa-twitter"></a>
+                                        <a href={`mailto:${email}`} target="_blank" className="fa fa-envelope"></a>
                                         </li>
                                     </ul>
                                 </div>

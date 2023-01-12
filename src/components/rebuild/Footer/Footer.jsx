@@ -1,5 +1,5 @@
 import React from "react";
-
+import { footerList } from "./Footer.data";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 import "./Footer.css"
@@ -65,13 +65,7 @@ function Footer() {
                                     <div className="footer-widget-heading">
                                         <h3>Useful Links</h3>
                                     </div>
-                                    <ul>
-                                        <li>Home</li>
-                                        <li>About</li>
-                                        <li>Services</li>
-                                        <li>Contact Us</li>
-                                        <li>Sponsors</li>
-                                    </ul>
+                                    <FootList/>
                                 </div>
                             </div>
 
@@ -92,6 +86,25 @@ function Footer() {
             </div>
         </>
     );
+}
+
+function FootList(props){
+    const {onClick} = props;
+    return (
+        <ul>
+        {
+            footerList.map(({ to, display }) =>
+            (
+                <li className="nav-item" onClick={onClick} key={display}>
+                    <Link to={to} className="text-white">
+                        {display}
+                    </Link>
+                </li>
+            )
+            )
+        }
+    </ul>
+    )
 }
 
 export default Footer;
