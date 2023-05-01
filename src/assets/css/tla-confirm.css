@@ -1,0 +1,34 @@
+@layer component {
+    .tla-delete-confirm .ant-modal-content{
+        border-radius: 10px !important;
+        width: 440px;
+    }
+
+    .tla-delete-confirm .ant-modal-content{
+        text-align: left !important;
+        font-weight: 500 !important;
+        font-size: 18px !important;
+    }
+
+    .tla-delete-confirm .ant-modal-confirm-btns {
+        margin-top: 24px !important;
+        text-align: right;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .tla-delete-confirm .ant-btn-dangerous {
+        color: white !important;
+    }
+
+    .confirm-delete-btn, .confirm-delete-btn:hover {
+        background-color: #D92D20 !important;
+        border: solid 1px #D92D20 !important;
+        color: white !important;
+    }
+
+    .ant-modal-confirm-body img {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}

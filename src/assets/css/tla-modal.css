@@ -1,0 +1,111 @@
+@layer component {
+    .tla-modal {
+        box-sizing: border-box;
+        margin: 0 auto;
+        color: rgba(0, 0, 0, .88);
+        font-size: 14px;
+        line-height: 1.57;
+        list-style: none;
+        pointer-events: none;
+        position: relative;
+        top: 100px;
+        width: auto;
+        max-width: calc(100vw - 32px);
+        padding: 0 0 24px;
+    }
+
+    .ant-modal.ant-zoom-enter,
+    .ant-modal.ant-zoom-appear {
+        transform: none;
+        opacity: 0;
+        -webkit-animation-duration: 0.3s;
+        animation-duration: 0.3s;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .ant-modal-mask {
+        position: fixed;
+        top: 0;
+        inset-inline-end: 0;
+        bottom: 0;
+        inset-inline-start: 0;
+        z-index: 1000;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .45);
+    }
+
+    .ant-modal-mask-hidden {
+        display: none;
+    }
+
+    .ant-modal-wrap {
+        position: fixed;
+        top: 0;
+        inset-inline-end: 0;
+        bottom: 0;
+        inset-inline-start: 0;
+        overflow: auto;
+        outline: 0;
+    }
+
+    .ant-modal-wrap {
+        z-index: 1000;
+    }
+
+    .ant-modal-title {
+        margin: 0;
+        color: rgba(0, 0, 0, 0.85);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        word-wrap: break-word;
+    }
+
+    .ant-modal-content {
+        position: relative;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 0;
+        border-radius: 8px;
+        box-shadow: 0 6px 16px 0 rgb(0 0 0 / 8%), 0 3px 6px -4px rgb(0 0 0 / 12%), 0 9px 28px 8px rgb(0 0 0 / 5%);
+        pointer-events: auto;
+        padding: 20px 24px;
+    }
+
+    .tla-modal-content {
+        background: #FFFFFF !important;
+        box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.08), 0px 8px 8px -4px rgba(16, 24, 40, 0.03) !important;
+        border-radius: 12px !important;
+
+    }
+
+    .tla-modal-header {
+        color: rgba(0, 0, 0, .88);
+        background: #fff;
+        border-radius: 8px 8px 0 0;
+        margin-bottom: 8px;
+    }
+
+    .ant-modal-close {
+        position: absolute;
+        top: 17px;
+        inset-inline-end: 17px;
+        z-index: 1010;
+        padding: 0;
+        color: rgba(0, 0, 0, .45);
+        font-weight: 600;
+        line-height: 1;
+        text-decoration: none;
+        background: 0 0;
+        border-radius: 4px;
+        width: 22px;
+        height: 22px;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+        transition: color .2s, background-color .2s;
+    }
+}

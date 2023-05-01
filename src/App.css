@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "./assets/css/tla-modal.css";
+@import "./assets/css/tla-confirm.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: "Poppins", sans-serif;
+    }
+}
+
+@layer component {
+    .auth-layout label {
+        @apply !text-gray-700;
+    }
+
+    .auth-layout input::placeholder {
+        @apply !text-gray-500 !text-base;
+    }
+
+    .auth-layout input {
+        @apply !h-[44px];
+    }
+
+    .auth-layout .ant-input-affix-wrapper >input.ant-input {
+        @apply !h-[30px];
+    }
+
+    .btn-success {
+        @apply !bg-success-100 !text-white-000 ring-1 ring-success-100
+        hover:bg-success-100 hover:text-white-000 !border-0;
+    }
+
+    .btn-success-landing {
+        @apply !bg-success-100 !text-white-000 ring-1 ring-success-100
+        hover:bg-success-100 hover:text-white-000 !border-0 !font-bold
+        py-3 !w-full md:!w-[151px];
+    }
+
+    .btn-light {
+        @apply !bg-white-000 text-success-100 px-6 py-3.5 rounded-lg;
+    }
+
+    .ant-form-item {
+        @apply !mb-4;
+    }
+
+    .ant-form-item-label {
+        @apply !pb-1.5;
+    }
+
+    .ant-form-item.bolstaar-check {
+        @apply !mb-0;
+    }
+
+    .bolstaar-search {
+        /*@apply w-full md:!w-[493px];*/
+    }
+
+    .bolstaar-search .ant-input-affix-wrapper {
+        @apply !rounded-lg;
+    }
+
+    .bolstaar-search .ant-input-group-addon {
+        @apply !hidden;
+    }
+
+    .ant-input-suffix, .ant-input-prefix {
+        @apply !text-gray-400;
+    }
+
+    .l-item {
+        @apply flex items-center before:pr-5 text-black-100 text-[18px];
+    }
+
+    .l-item::before {
+        @apply pt-2;
+        content: url("assets/images/rent-a-tool/check.svg");
+    }
+
+    .ant-collapse {
+        font-family: Poppins, sans-serif !important;
+        @apply !text-[18px] !text-black-100;
+    }
+
+    .email-input {
+        @apply !w-full md:!w-[407px] ;
+    }
+
+    .email-input input {
+        @apply !bg-black-300 !text-white-000 !border-0;
+    }
+
+    .email-input .ant-input-suffix {
+        @apply bg-success-300 !w-[60px] relative !border-0;
+        border-radius: 50px;
+        padding: 20px;
+    }
+
+    .email-input.ant-input-affix-wrapper {
+        @apply !bg-black-300 !p-0 !border-0;
+    }
+
+    .email-input.ant-input-affix-wrapper >input.ant-input {
+       @apply !rounded-[50px] !pl-3 !border-0;
+    }
+
+    .email-input input::placeholder {
+        @apply !text-white-000;
+    }
+
+    .search-col-item {
+        @apply h-full md:h-[130px] !flex !items-center;
+    }
+
+    .ant-breadcrumb li {
+        display: flex !important;
+        align-items: center;
+    }
+
+    .ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+        @apply !text-success-100;
+    }
+
+    .ant-tabs-tab-btn:hover {
+        @apply !text-success-100;
+    }
+
+    .ant-form-item .ant-form-item-label >label {
+        @apply !text-gray-700;
+    }
+
+    .delete-label h3{
+        color: red !important;
+    }
+}
